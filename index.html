@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="mystyle2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Rustic Roots Restaurant</title>
+</head>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+    <div class="w3-bar-item w3-xlarge" id="myNavbar">
+      <a href="#" class="w3-bar-item w3-button w3-right w3-text-white">HOME</a>
+      <a href="#menu"  onclick="document.getElementById('menu').style.display='block' "class="w3-bar-item w3-button w3-right w3-text-white">MENU</a>
+      <a href="#about" class="w3-bar-item w3-button w3-right w3-text-white">ABOUT</a>
+      <a href="#myMap" class="w3-bar-item w3-button w3-right w3-text-white">CONTACT</a>
+    </div>
+  </div>
+    
+  <!-- Header with image -->
+  <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-bottomleft w3-padding">
+      <span class="w3-tag w3-xlarge">Working hours 12:00 - 21:30 Tuesday-Saturday</br>12:00 - 20:30 Sunday</span>
+    </div>
+    <div class="w3-display-middle w3-center">
+        <div id="div1" class="w3-text-amber w3-hide-small" style="font-size:100px">Rustic</div>
+        <div id="div2" class="w3-text-amber w3-hide-small" style="font-size:100px">Roots</div>
+        <div id="div3" class="w3-text-amber w3-hide-small" style="font-size:100px">Restaurant</div>
+    </div>
+  </header>
+  
+  <!-- Somespace -->
+  <!-- Somespace -->
+  <!-- Somespace -->
+  <!-- Automatic Slideshow Images -->
+
+  <!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="mySlides w3-col m6 w3-padding-large w3-hide-small">
+     <img src="Meringue.jpg" class="w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+    <div class="mySlides w3-col m6 w3-padding-large w3-hide-small">
+      <img src="coffee.jpg" class="w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+     </div>
+     <div class="mySlides w3-col m6 w3-padding-large w3-hide-small">
+      <img src="vatapa.jpg" class="w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+     </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About</h1><br>
+      <h5 class="w3-center">Opened since 2022</h5>
+      <p class="w3-large">
+        The Restaurant was fully renovated and designed by owners to classic,
+        stylish dine-in place to eat with modern touch of furniture , pictures
+        of Ireland and piece of Athlone town map on the wall. Food menu contains
+        unique ingredients and  exceptional taste.
+      </p>
+      <p class="w3-large w3-text-grey w3-hide-medium">
+        A little bit about owner bla bla bla
+        A little bit about owner bla bla bla
+        A little bit about owner bla bla bla
+        A little bit about owner bla bla bla
+        A little bit about owner bla bla bla</br>
+        Monika's and Pedro's picture maybe?
+      </p>
+      
+      
+      
+    </div>
+  </div>
+  <!-- menu starts here -->
+  <div id="menu" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container w3-black w3-display-container">
+        <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+        <!-- Menu Container -->
+  <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+    <div class="w3-content">
+    
+      <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+      <div class="w3-row w3-center w3-border w3-border-dark-grey">
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Day menu');" id="myLink">
+          <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Day menu</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+          <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Salads</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+          <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Starter</div>
+        </a>
+      </div>
+      <div id="Day menu" class="w3-container menu w3-padding-32 w3-white">
+        <div>
+          <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+          <a onclick=BurgerMenu()>Burgers menu image</a>
+                <!-- this is where day menu button will be pressed -->
+                <div id="Day_menu" class="w3-modal">
+                  <div class="w3-modal-content w3-animate-zoom">
+                    <div class="w3-container w3-black w3-display-container">
+                      <span onclick="document.getElementById('Day_menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+                    </div>
+                  </div>
+                </div>
+        </div>
+      </div>
+      <br>
+  
+      <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+        <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+        <p class="w3-text-grey">Ask the waiter</p>
+        <hr>
+     
+        <h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+        <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+        <hr>
+        
+        <h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+        <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+        <hr>
+        
+        <h1><b>Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+        <p class="w3-text-grey">Tomatoes and mozzarella</p>
+      </div><br>
+  
+    </div>
+  </div>
+  
+      </div>
+    </div>
+  </div>
+
+  <!-- menu ends here -->
+  <!-- Image of location/map -->
+  <img src="map5.jpg" class="w3-image w3-greyscale" style="width:40%;" id="myMap">
+  
+  <!-- Contact -->
+  <h1><b>Opening Hours</b></h1>
+  <div class="w3-row">
+    <div class="w3-col s6">
+      <p>Monday CLOSED</p>
+      <p>Tuesday 12.00 - 21.30</p>
+      <p>Wednesday 12.00 - 21.30</p>
+      <p>Thursday 12:00 - 21:30</p>
+      <p>Friday 12:00 - 21:30</p>
+      <p>Saturday 12:00 - 21:30</p>
+      <p>Sunday 12:00 - 21:00</p>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <a href="https://www.facebook.com/profile.php?id=100085073442552"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/rusticrootsrestaurant/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <!-- other icons not working because social media didnt seted yet -->
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </footer> 
+</body>
+<script src="myscript.js" defer></script> 
+</html>

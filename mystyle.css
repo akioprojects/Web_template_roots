@@ -1,0 +1,48 @@
+
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("hall.jpg");
+  min-height: 90%;
+  background-attachment:fixed;
+}
+.bgimg1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("Meringue.jpg");
+  min-height: 90%;
+  background-attachment:fixed;
+}
+.w3-bar{width:100%}.w3-center .w3-bar{display:inline-block;width:auto}
+  
+  #div1 {
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 2s;
+    animation-timing-function: linear;}
+  #div2 {
+    animation-timing-function: ease;
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 3s;}
+  #div3 {
+    animation-timing-function: ease-in;
+    font-weight: bold;
+    position:relative;
+    animation: mymove 4s;}
+  
+  @keyframes mymove {
+    from {left: -300px;}
+    to {left: 0px;}
+  }
+
+  #round1{
+    border-radius: 50%;
+  }
