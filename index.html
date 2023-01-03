@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mystyle.css">
     <link rel="stylesheet" href="mystyle2.css">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Rustic Roots Restaurant</title>
+    <title>Rustic Roots Restaurant Website</title>
 </head>
 <body>
 <!-- Navbar (sit on top) -->
@@ -24,13 +25,13 @@
     
   <!-- Header with image -->
   <header class="bgimg w3-display-container w3-grayscale-min" id="home">
-    <div class="w3-display-bottomleft w3-padding">
-      <span class="w3-tag w3-xlarge">Working hours 12:00 - 21:30 Tuesday-Saturday</br>12:00 - 20:30 Sunday</span>
+    <div class=" w3-display-bottomleft">
+        <div id="div1" class="w3-text-white w3-hide-small" style="font-size:150px">Rustic</div>
+        <div id="div2" class="w3-text-white w3-hide-small" style="font-size:150px">Roots</div>
+        <div id="div3" class="w3-text-white w3-hide-small" style="font-size:150px">Restaurant</div>
     </div>
-    <div class="w3-display-middle w3-center">
-        <div id="div1" class="w3-text-amber w3-hide-small" style="font-size:100px">Rustic</div>
-        <div id="div2" class="w3-text-amber w3-hide-small" style="font-size:100px">Roots</div>
-        <div id="div3" class="w3-text-amber w3-hide-small" style="font-size:100px">Restaurant</div>
+    <div class="w3-display-bottomright w3-padding">
+      <span class="w3-tag w3-xlarge">Working hours 12:00 - 21:30 Tuesday-Saturday</br>12:00 - 20:30 Sunday</span>
     </div>
   </header>
   
@@ -86,48 +87,23 @@
     
       <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
       <div class="w3-row w3-center w3-border w3-border-dark-grey">
-        <a href="javascript:void(0)" onclick="openMenu(event, 'Day menu');" id="myLink">
-          <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Day menu</div>
-        </a>
-        <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
-          <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Salads</div>
-        </a>
-        <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
-          <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Starter</div>
-        </a>
+        <!-- images constantly changes  -->
+        <a id="myLink"></a>
       </div>
       <div id="Day menu" class="w3-container menu w3-padding-32 w3-white">
         <div>
-          <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
-          <a onclick=BurgerMenu()>Burgers menu image</a>
-                <!-- this is where day menu button will be pressed -->
-                <div id="Day_menu" class="w3-modal">
-                  <div class="w3-modal-content w3-animate-zoom">
-                    <div class="w3-container w3-black w3-display-container">
-                      <span onclick="document.getElementById('Day_menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
-                    </div>
-                  </div>
-                </div>
+          <a onclick=BurgerMenu()>Burgers menu image</br></a>
+        </div>
+        <div>
+          <a onclick=BurgerMenu()>Starters menu image</br></a>
+        </div>
+        <div>
+          <a onclick=BurgerMenu()>A la carte menu image</br></a>
         </div>
       </div>
+    </div>
+  </div>
       <br>
-  
-      <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
-        <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
-        <p class="w3-text-grey">Ask the waiter</p>
-        <hr>
-     
-        <h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
-        <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
-        <hr>
-        
-        <h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
-        <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
-        <hr>
-        
-        <h1><b>Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
-        <p class="w3-text-grey">Tomatoes and mozzarella</p>
-      </div><br>
   
     </div>
   </div>

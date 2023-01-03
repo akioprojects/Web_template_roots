@@ -1,4 +1,6 @@
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+
+body, html {height: 100%}
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
@@ -24,7 +26,7 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 [type=search]::-webkit-search-decoration{-webkit-appearance:none}
 ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
 /* End extract */
-html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+html,body{font-family:Papyrus,fantasy;font-size:30px;line-height:1.5}html{overflow-x:hidden}
 h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
 .w3-serif{font-family:serif}.w3-sans-serif{font-family:sans-serif}.w3-cursive{font-family:cursive}.w3-monospace{font-family:monospace}
 h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
@@ -212,7 +214,49 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-brown,.w3-hover-border-brown:hover{border-color:#795548!important}
 .w3-border-cyan,.w3-hover-border-cyan:hover{border-color:#00bcd4!important}
 
-/* manual changes  */
+/*Background image*/
+
+.bgimg {
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-image: url("/Web_template_roots/images/design/Restaurant_image_333.jpg");
+  min-height: 100%;
+  background-attachment:fixed;
+}
+/* changing images in page content */
+.bgimg1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("Meringue.jpg");
+  min-height: 90%;
+  background-attachment:fixed;
+}
+/* animation of header */
+  
+  #div1 {
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 2s;
+    animation-timing-function: linear;}
+  #div2 {
+    animation-timing-function: ease;
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 3s;}
+  #div3 {
+    animation-timing-function: ease-in;
+    font-weight: bold;
+    position:relative;
+    animation: mymove 4s;}
+  
+  @keyframes mymove {
+    from {left: -300px;}
+    to {left: 0px;}
+  }
 
 /* social media icons */
 .fa {
