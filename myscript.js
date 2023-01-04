@@ -52,3 +52,53 @@ window.onclick = function(event) {
 BurgerMenu = () => {
 window.open("MENU_BURGER_A4ai.pdf")
 }
+JustForKids = () => {
+window.open("KIDS_MENU.pdf")
+}
+EarlyBird = () => {
+window.open("MENU_EARLY_A4.pdf")
+}
+DayMenu = () => {
+  window.open("MENU_DAYMENU_A3.pdf")
+}
+ÀLaCarte = () => {
+  window.open("menu_lacarte.pdf")
+}
+DrinksMenu= () => {
+  window.open("DRINKS_MENU.pdf")
+}
+WhiteWine = () => {
+  window.open("White_Wine.pdf")
+}
+RedWine = () => {
+  window.open("Red_Wine.pdf")
+}
+Draught = () => {
+  window.open("Draught.pdf")
+}
+
+// location on
+Location = () => {
+  window.open(href="https://www.google.com/maps/search/rustic+roots+restaurant/@53.4237036,-7.9409355,18.75z")
+}
+
+
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+// const menu_list = {
+//   BurgerMenu:"MENU_BURGER_A4ai.pdf",
+//   EarlyBird:"/menu/KIDS_MENU",
+//   DayMenu:"/menu",
+//   ÀLaCarte:"/menu",
+//   JustForKids:"/menu",
+//   DrinksMenu:"/menu",
+//   WhiteWine:"/menu",
+//   RedWine:"/menu",
+//   Draught:"/menu"
+
+// }
